@@ -1,16 +1,18 @@
 # SCDM_based Model
 
 ## Introduction
-Since the correct order of step descriptions is corresponded to the video, temporally aligning each step description in the video can solve the step ordering task. 
+Since the correct order of step descriptions is corresponded to the video, temporally aligning each step description in the video can solve the step ordering task. Therefore, we formulate the core task as temporal activity localization vialanguage (TALL)
 
 We adopt one of state-of-the-art models [Semantic Conditioned Dynamic Modulation (SCDM)](https://arxiv.org/abs/1910.14303) as our baseline model for the TALL task. The code is available in ```grounding/SCDM```.
 
 Furthermore, due to the fine-grained nature of our task, we propose an enhanced  model (SCDM+) based on SCDM which utilizes additional fine-grained guidance for training. The code is available in ```grounding/SCDM+```.
 
+<div style="text-align: center">
+<img src="../../pics/SCDM.png">
+</div>
+
+
 Both code is based on [https://github.com/yytzsy/SCDM](https://github.com/yytzsy/SCDM)
-
-![image](SCDM.png)
-
 ## Requirement
 - python 3.6 
 - tensorflow 1.12
@@ -62,4 +64,5 @@ python accuracy_calculate.py
 ```
 For enhanced  model (SCDM+), the operation is similiar.
 
+#### Checkpoints
 Checkpoints of saved model is available in [SCDM(I3D)_checkpoints](http://note.youdao.com/), [SCDM(C3D)_checkpoints](http://note.youdao.com/), [SCDM+(I3D)_checkpoint](http://note.youdao.com/). Download checkpoint and place it under ```./grounding/SCDM``` or ``` ./grounding/SCDM+```. You can use the checkpoints to reprodece the result in baseline paper.

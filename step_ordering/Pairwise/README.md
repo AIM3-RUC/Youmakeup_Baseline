@@ -3,7 +3,9 @@
 ## Introduction
 Pairwise model simplify the task into a binary classification of sentences. The model structure is shown below:
 
-![image](Pairwise.png)
+<div style="text-align: center">
+<img src="../../pics/Pairwise.png">
+</div>
 
 ## Requirement
 python 3.6 \
