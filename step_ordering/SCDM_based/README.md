@@ -7,7 +7,7 @@ We adopt one of state-of-the-art models [Semantic Conditioned Dynamic Modulation
 
 Furthermore, due to the fine-grained nature of our task, we propose an enhanced  model (SCDM+) based on SCDM which utilizes additional fine-grained guidance for training. The code is available in ```grounding/SCDM+```.
 
-<div style="text-align: center">
+<div style="align: center">
 <img src="../../pics/SCDM.png">
 </div>
 
@@ -47,14 +47,12 @@ For model dev, claculate R@n, IoU@m metric , run:
 
 ```
 python run_makeup_scdm.py --task dev 
-
 ```
 
 For model test, output answer for multi-choice questions, run:
 
 ```
 python run_makeup_scdm.py --task test
-
 ```
 
 To calculate the accuracy of multiple choice questions, run:

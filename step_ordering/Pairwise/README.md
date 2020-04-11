@@ -3,7 +3,7 @@
 ## Introduction
 Pairwise model simplify the task into a binary classification of sentences. The model structure is shown below:
 
-<div style="text-align: center">
+<div style="align: center">
 <img src="../../pics/Pairwise.png">
 </div>
 
