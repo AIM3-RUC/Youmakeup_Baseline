@@ -31,10 +31,9 @@ Both code is based on [https://github.com/yytzsy/SCDM](https://github.com/yytzsy
   │      ├─train
   │      └─valid
   └─Youmakeup_Baseline
-      └─image_ordering
+      └─step_ordering
          ├─Pairwise
-         ├─shared_data
-         └─TIRG
+         └─SCDM_based
   ```
 - Download the following file into ```../../../data```:
 Extracted video features:
