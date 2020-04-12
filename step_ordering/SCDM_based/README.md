@@ -22,11 +22,24 @@ Both code is based on [https://github.com/yytzsy/SCDM](https://github.com/yytzsy
 
 
 #### Data Download
-- Download [YouMakeup dataset](https://github.com/AIM3-RUC/YouMakeup.git) and place it in the root dictionary.
+- Download [YouMakeup dataset](https://github.com/AIM3-RUC/YouMakeup.git) and place it in the root dictionary.The file structure under the root is as followings:
+
+  ```csharp
+  ├─YouMakeup
+  │  └─data
+  │      ├─task
+  │      ├─train
+  │      └─valid
+  └─Youmakeup_Baseline
+      └─image_ordering
+         ├─Pairwise
+         ├─shared_data
+         └─TIRG
+  ```
 - Download the following file into ```../../../data```:
 Extracted video features:
 [makeup_c3d_rgb_stride_1s.zip](https://drive.google.com/open?id=1gPGEYej70hKM6e-ftXI0RBNzn4AokMJ1) or  [makeup_i3d_rgb_stride_1s.zip.]( https://drive.google.com/open?id=1cT5MKcmSmqS6xC_i2dI2wbJ3n7mdFh7o)\
-For glove word embeddings used in baseline, download [glove.840B.300d_dict.npy](http://note.youdao.com/) 
+For glove word embeddings used in baseline, download [glove.840B.300d_dict.npy](https://drive.google.com/open?id=1duGDi-NuC5WtIkknSO5_XViVEqZNS5DD) 
 
 #### Data Preprocessing
 
@@ -63,5 +76,5 @@ python accuracy_calculate.py
 For enhanced  model (SCDM+), the operation is similiar.
 
 #### Checkpoints
-Checkpoints of saved model is available in [SCDM(I3D)_checkpoints](http://note.youdao.com/), [SCDM(C3D)_checkpoints](http://note.youdao.com/), [SCDM+(I3D)_checkpoint](http://note.youdao.com/). Download checkpoint and place it under ```./grounding/SCDM``` or ``` ./grounding/SCDM+```. You can use the checkpoints to reproduce the result in baseline paper.
+Checkpoints of saved model is available in [SCDM(I3D)_checkpoints](https://drive.google.com/open?id=1P1AMpbY726bESI1NxygH4cZhH5NL4KtY), [SCDM(C3D)_checkpoints](https://drive.google.com/open?id=1HWyMxJPmk6kdBRT63pQaIXvgpx55yyab), [SCDM+(I3D)_checkpoint](https://drive.google.com/open?id=13QMJ5z5PBVkDFkuxxTpAwH5EJumJNITa). Download checkpoint and place it under ```./grounding/SCDM``` or ``` ./grounding/SCDM+```. You can use the checkpoints to reproduce the result in baseline paper.
 
