@@ -5,14 +5,15 @@
 Pairwise model simplify the task into a binary classification of sentences. The model structure is shown below:
 
 <div style="align: center">
-<img src="../../pics/Image_Pairwise.png" width="80%" height="80%">
+<img src="../../pics/Image_Pairwise.png">
 </div>
+
 
 
 ## Requirement
 
-python 2.7
-Pytorch 0.4.1
+- python 2.7
+- Pytorch 0.4.1
 
 
 

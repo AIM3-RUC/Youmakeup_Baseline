@@ -23,13 +23,13 @@ To reproduce two baseline models,  you need to prepare the required data in adva
   
   
   
-- Download  1,680 train videos and 280 validation videos under the guidance of   [YouMakeup/data](https://github.com/AIM3-RUC/YouMakeup/tree/master/dataYouMakeup_dataset/data/ ) and place them at   ```/YouMakeup/data/train/videos/``` and  ```/YouMakeup/data/valid/videos/```  respectively
+- Download  1,680 train videos and 280 validation videos under the guidance of   [YouMakeup/data](https://github.com/AIM3-RUC/YouMakeup/tree/master/data) and place them at   ```/YouMakeup/data/train/videos/``` and  ```/YouMakeup/data/valid/videos/```  respectively
 
   
 
 ## Data pre-processing 
 
-To train/evaluate two baseline models, first extract images from obtained videos. For each video, we extract 10 frames at the end of each video clip  aligned with a  makeup step caption.
+To train/evaluate two baseline models, firstly extract images from obtained videos. For each video, we extract 10 frames at the end of each video clip aligned with a  makeup step caption. Run the following code to extract images:
 
 ```
 python data_preprocess.py
@@ -42,7 +42,7 @@ python data_preprocess.py
     ```"VideoId_StepStartFrame_StepEndFrame / VideoId_FrameIndex.pt"```
   
    e.g. "9XP1Vs9Hz4E_7576_7864/9XP1Vs9Hz4E_7819.pt"
-  
+
   
 
 ## Get Image Features (Optional)
