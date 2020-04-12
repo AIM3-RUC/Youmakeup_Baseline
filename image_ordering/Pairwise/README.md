@@ -5,8 +5,9 @@
 Pairwise model simplify the task into a binary classification of sentences. The model structure is shown below:
 
 <div style="align: center">
-<img src="../../pics/Image_Pairwise.png">
+<img src="../../pics/image_pairwise.png" width = "70%" height = "70%">
 </div>
+
 
 
 
