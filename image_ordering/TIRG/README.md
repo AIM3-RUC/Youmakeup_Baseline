@@ -20,6 +20,8 @@ build codes on top of  [Tirg code](https://github.com/google/tirg) in PyTorch.
 
 ## Requirement
 
+- python 2.7
+
 - torchvision 0.2.1
 
 - pytorch 0.4.1
@@ -60,7 +62,7 @@ python generate_mod_data.py
 
 
 
-For training & testing, run:
+For training model, run:
 
 ```
 python main.py --dataset=youmakeup --dataset_path=../shared_data/ --num_iters=400000 --model=concat --loss=batch_based_classification --learning_rate_decay_frequency=120000 --comment=makeup_multi --batch_size=32 --loader_num_workers=0
@@ -69,24 +71,50 @@ python main.py --dataset=youmakeup --dataset_path=../shared_data/ --num_iters=40
 For evaluating  model results on R@K, run:
 
 ```
-python evaluation.py 
-```
-
-Apply model to multiple choice questions of image ordering task, run:
-
-```
-python get_ordering_result.py
+python evaluation.py  --checkpoint='saved model path'
 ```
 
 
+
+Apply the trained model to choose answers from image ordering task questions. 
+
+You can calculate the choice accuracy of the trained model on the task **validation** questions by running :
+
+```
+python get_ordering_result.py --checkpoint='saved model path' --split=valid
+```
+
+You can calculate the choice accuracy of the trained model on the task **test** questions by running :
+
+```
+python get_ordering_result.py --checkpoint='saved model path' --split=test
+```
 
 
 
 #### Pretrained Models:
 
-Our pretrained models can be downloaded [here]().
+Our pretrained models can be downloaded [here](). Download the pre-trained model and the related mod_data. Place them in ```./pretrain_model/```
 
+To evaluate the R@K performance of pre-trained model, run:
 
+```
+python evaluation.py --mod_data_path=./pretrain_model/ --checkpoint=./pretrain_model/Tirg_pretrained_checkpoint.pth 
+```
+
+Note: Due to the possible difference between your generated valid images and official valid images, the evaluation R@K running locally may be different from the official results.
+
+Calculate valid choice accuracy of pre-trained model:
+
+```
+python get_ordering_result.py  --split=valid --mod_data_path=./pretrain_model/ --checkpoint=./pretrain_model/Tirg_pretrained_checkpoint.pth
+```
+
+Calculate test choice accuracy of pre-trained model:
+
+```
+python get_ordering_result.py  --split=test  --mod_data_path=./pretrain_model/ --checkpoint=./pretrain_model/Tirg_pretrained_checkpoint.pth
+```
 
 
 

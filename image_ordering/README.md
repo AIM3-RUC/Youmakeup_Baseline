@@ -4,6 +4,14 @@ To reproduce two baseline models,  you need to prepare the required data in adva
 
 
 
+## Requirement
+
+- python 2.7
+- Pytorch 0.4.1
+- opencv
+
+
+
 ## Data download
 
 - Download [YouMakeup dataset](https://github.com/AIM3-RUC/YouMakeup.git) and place it in the root dictionary. The file structure under the root is as followings:
@@ -32,7 +40,7 @@ To reproduce two baseline models,  you need to prepare the required data in adva
 To train/evaluate two baseline models, firstly extract images from obtained videos. For each video, we extract 10 frames at the end of each video clip aligned with a  makeup step caption. Run the following code to extract images:
 
 ```
-python data_preprocess.py
+python ./shared_data/data_preprocess.py
 ```
 
 - The extracted images will be put in ```./shared_data/train_images``` and ``` ./shared_data/val_images``` 
@@ -43,7 +51,7 @@ python data_preprocess.py
   
    e.g. "9XP1Vs9Hz4E_7576_7864/9XP1Vs9Hz4E_7819.pt"
 
-  
+- The code will generate three JSON files saving useful information about extracted images in  ```./shared_data/```  after running.
 
 ## Get Image Features (Optional)
 
