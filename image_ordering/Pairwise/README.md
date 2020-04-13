@@ -28,4 +28,5 @@ Pairwise model simplify the task into a binary classification of sentences. The 
 ## Run pairwise model
 
 - All code is available at  ```Siamese-networks.ipynb ``` , follow the guidance in it to complete different process.
-- The pre-trained model (with curriculum learning and without curriculum learning ) is available at [here]()
+- The pre-trained model (with curriculum learning and without curriculum learning ) is available at [here](https://drive.google.com/file/d/1ZgzQZw4xwkBd2gsYuCEJvZcWPEha62OC/view?usp=sharing). Download and place them in ```pretrain_model/```
+

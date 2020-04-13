@@ -78,13 +78,13 @@ python evaluation.py  --checkpoint='saved model path'
 
 Apply the trained model to choose answers from image ordering task questions. 
 
-You can calculate the choice accuracy of the trained model on the task **validation** questions by running :
+You can calculate the choice accuracy of the trained model on the task **validation** questions and get predicted answers saved in .json by running :
 
 ```
 python get_ordering_result.py --checkpoint='saved model path' --split=valid
 ```
 
-You can calculate the choice accuracy of the trained model on the task **test** questions by running :
+You can calculate the choice accuracy of the trained model on the task **test** questions and get predicted answers saved in .json by running :
 
 ```
 python get_ordering_result.py --checkpoint='saved model path' --split=test
@@ -94,7 +94,7 @@ python get_ordering_result.py --checkpoint='saved model path' --split=test
 
 #### Pretrained Models:
 
-Our pretrained models can be downloaded [here](). Download the pre-trained model and the related mod_data. Place them in ```./pretrain_model/```
+Our pretrained models can be downloaded [here](https://drive.google.com/file/d/1pkt34gFzmDehbNHwFUO3BkAMPr_-xami/view?usp=sharing). Download the pre-trained model and the related mod_data. Place them in ```./pretrain_model/```
 
 To evaluate the R@K performance of pre-trained model, run:
 
