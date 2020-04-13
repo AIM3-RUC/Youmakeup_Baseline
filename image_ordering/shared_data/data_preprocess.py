@@ -68,7 +68,7 @@ def ConvertToTensor(image):
             torchvision.transforms.Normalize([0.485, 0.456, 0.406],
                                              [0.229, 0.224, 0.225])
         ])
-    image = Image.fromarray(image)
+    image = Image.fromarray(cv2.cvtColor(image,cv2.COLOR_BGR2RGB))
     image = image.convert('RGB')
     img = transform(image)
     return img
@@ -214,7 +214,7 @@ def ExtractImagesFromFullData(caption_data_path,video_data_path,movie_names,save
                     
                     #obtain each extracted image information
                     path = image_dir+'/'+vid+'_'+str(times)+'.pt' #3L-C3lsV2_w_6813_7819/3L-C3lsV2_w_7819.pt
-                    img_index2info[image_index] = [vid,vnum-1,times,cid, path] #图片id对应的（视频名，视频id, 视频帧索引,caption索引）
+                    img_index2info[image_index] = [vid,vnum-1,times,cid, path]
                     video_info[vid]['frames'].append(times)
                     video_info[vid]['captions'].add(cid)
                     image_index += 1
