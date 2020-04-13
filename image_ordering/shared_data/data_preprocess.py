@@ -228,6 +228,7 @@ def ExtractImagesFromFullData(caption_data_path,video_data_path,movie_names,save
             video_info[vid]['areas'] = [areas[video_info[vid]['captions'][i]] for i in range(0,len(video_info[vid]['captions'])-1)]
     
     print("**********************Finished**********************")
+    print(split)
     print(vnum," videos processed in total")    
     print(image_index," images extracted in total")
     return  img_index2info,video_info,split_images_num,videos_fps  
@@ -246,8 +247,8 @@ if __name__ == '__main__':
     captions_path['test'] = "../../YouMakeup/data/valid/valid_steps.json"
     #the save path of extracted train/test imgs
     save_img_path = {}
-    save_img_path['train'] = "./train_images/"
-    save_img_path['test'] = "./val_images/"
+    save_img_path['train'] = "./shared_data/train_images/"
+    save_img_path['test'] = "./shared_data/val_images/"
     #get train/test video ids (filter videos that doesn't exist)
     train_id_path = "../../YouMakeup/data/train/train_id"
     test_id_path = "../../YouMakeup/data/valid/valid_id"
@@ -268,9 +269,9 @@ if __name__ == '__main__':
     
     #save useful information about extracted img 
     #img_index2info,video_info
-    json_data_save("img_index2info.json", img_index2info)
-    json_data_save("video_info.json", video_info)
-    json_data_save("fps.json", fps)
+    json_data_save("./shared_data/img_index2info.json", img_index2info)
+    json_data_save("./shared_data/video_info.json", video_info)
+    json_data_save("./shared_data/fps.json", fps)
     
     
     
