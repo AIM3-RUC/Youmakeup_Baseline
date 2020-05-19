@@ -57,5 +57,5 @@ python ./shared_data/data_preprocess.py
 
 For facial image ordering task, we provide 512D  feature embedding of ResNet-18 pretrained on ImageNet and fine-tuned on YouMakeup dataset. 
 
-If necessary, you can download the ResNet-18 embedding for train/dev images and for images in task questions from [Google Drive](https://drive.google.com/file/d/1tDslbmaZkjnkjyUAhudJdX6mnS_4wiTV/view?usp=sharing) or [Baidu yun [Fetch Code: jcln]](https://pan.baidu.com/s/1RDlFj29Vga5Fyq0_hLSblg). 
+If necessary, you can download the ResNet-18 embedding for train/dev images and for images in task questions from [Google Drive](https://drive.google.com/drive/folders/1JyhsQtftSXs5n46hutRMeJudopW38bET?usp=sharing) or [Baidu yun [Fetch Code: ynwa]](https://pan.baidu.com/s/1zuk7ENAWa0aMGjRQFwsjKg). 
 
