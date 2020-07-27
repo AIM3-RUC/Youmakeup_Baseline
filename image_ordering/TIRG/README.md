@@ -65,7 +65,7 @@ python generate_mod_data.py
 For training model, run:
 
 ```
-python main.py --dataset=youmakeup --dataset_path=../shared_data/ --num_iters=400000 --model=concat --loss=batch_based_classification --learning_rate_decay_frequency=120000 --comment=makeup_multi --batch_size=32 --loader_num_workers=0
+python main.py --dataset=youmakeup --dataset_path=../shared_data/ --num_iters=400000 --model=tirg --loss=batch_based_classification --learning_rate_decay_frequency=120000 --comment=makeup_multi --batch_size=32 --loader_num_workers=0
 ```
 
 For evaluating  model results on R@K, run:

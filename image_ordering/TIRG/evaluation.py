@@ -31,7 +31,7 @@ if __name__ == '__main__':
     model = None
     checkpoint = torch.load(checkpoint_path)
     raw_opt = checkpoint['opt']
-    model = img_text_composition_models.Concat(texts, embed_dim=raw_opt.embed_dim)
+    model = img_text_composition_models.TIRG(texts, embed_dim=raw_opt.embed_dim)
     model = model.cuda()
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()

@@ -41,6 +41,6 @@ We prepared two kinds of baseline for this task.
 @inproceedings{chen2020vqabaseline,
   title={YouMakeup VQA Challenge: Towards Fine-grained Action Understanding in Domain-Specific Videos,
   author={Chen, Shizhe and Wang, Weiying and Ruan, Ludan and Yao, Linli and Jin, Qin},
-  year={2020}
+  year={2019}
 }
 ```

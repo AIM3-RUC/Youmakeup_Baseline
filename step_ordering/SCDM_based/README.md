@@ -37,7 +37,15 @@ Both code is based on [https://github.com/yytzsy/SCDM](https://github.com/yytzsy
   ```
 - Download the following file into ```../../../data```:
 Extracted video features:
-[makeup_c3d_rgb_stride_1s.zip](https://drive.google.com/open?id=1gPGEYej70hKM6e-ftXI0RBNzn4AokMJ1) or  [makeup_i3d_rgb_stride_1s.zip.]( https://drive.google.com/open?id=1cT5MKcmSmqS6xC_i2dI2wbJ3n7mdFh7o)\
+
+&emsp; &emsp; makeup_c3d_rgb_stride_1s.zip in:\
+&emsp; &emsp; [google drive](https://drive.google.com/open?id=1gPGEYej70hKM6e-ftXI0RBNzn4AokMJ1) or \
+&emsp; &emsp; [baidu_cloud](https://pan.baidu.com/s/1zaKC2BIw5ARmuYKybcAgDg)  password:hcw8
+
+&emsp; &emsp; makeup_i3d_rgb_stride_1s.zip in:\
+&emsp; &emsp; [google drive](https://drive.google.com/open?id=1cT5MKcmSmqS6xC_i2dI2wbJ3n7mdFh7o) or \
+&emsp; &emsp; [baidu_cloud](https://pan.baidu.com/s/1OH_6LvUWvRTcPO33wcjZ_g)  password:nrlu
+
 For glove word embeddings used in baseline, download [glove.840B.300d_dict.npy](https://drive.google.com/open?id=1duGDi-NuC5WtIkknSO5_XViVEqZNS5DD) 
 
 #### Data Preprocessing
